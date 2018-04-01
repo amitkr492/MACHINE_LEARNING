@@ -1,0 +1,196 @@
+1.extracing file name from file path
+
+print(os.path.basename(your_path))
+
+head, tail = os.path.split("/tmp/d/a.dat")
+>>> print(tail)
+a.dat
+>>> print(head)
+/tmp/d
+
+
+import os
+head, tail = os.path.split(p)
+print tail
+
+
+--------------------------------------
+2.
+extracting file extenstion from file name
+
+>>> import os
+>>> filename, file_extension = os.path.splitext('/path/to/somefile.ext')
+>>> filename
+'/path/to/somefile'
+>>> file_extension
+'.ext'
+
+
+
+os.path.splitext(filepath) gives the list 
+
+so 
+
+ temp_list = os.path.splitext(file_name)
+    file_name_without_ext = temp_list[0]
+    print(file_name_without_ext)
+
+
+----------------------------------------
+
+3.
+creating the jpg file for created graph
+
+
+plt.savefig(jpg_file_path)
+
+
+
+jpg_file_path = b_v_audio_graph_dir + jpg_file_name
+print(jpg_file_path)
+plt.savefig(jpg_file_path)
+plt.show()
+
+
+but always remember that plt.savefig() should always used before the plt.show() if you use plt.savefig() after plt.show() it will not work . score is removed after this.
+
+
+
+-------------------------------------
+3.For creating a legend in graph
+
+plt.plot(x_val_list,Y_val_list,'color_name',label='Anger')
+plt.legend(loc=2, fontsize="small")
+
+This second line plt.legend() is very much necessary.
+
+
+-----------------------------------------
+
+
+4.
+how to get data from dictionary 
+
+
+
+ if single_anaysisSegment['analysis'].get('Mood'):
+            result=single_anaysisSegment['analysis'].get('Mood')
+            single_list_data.append(result['Group11']['Primary']['Phrase'])
+            single_list_data.append(result['Group11']['Secondary']['Phrase'])
+
+
+-------------------------------
+
+5.
+
+How to set the matplotlib figure default size in ipython notebook?
+
+
+pylab.rcParams['figure.figsize'] = (10.0, 8.0)
+
+matplotlib.rcParams['figure.figsize'] = (20.0, 10.0)
+
+
+
+
+------------------------------
+
+6.
+
+Could someone explain to me what exactly is the use of %matplotlib inline?
+
+
+https://stackoverflow.com/questions/43027980/purpose-of-matplotlib-inline?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
+
+
+%matplotlib is a magic function in IPython. I'll quote the relevant documentation here for you to read for convenience:
+
+
+
+%matplotlib is a magic function in IPython. I'll quote the relevant documentation here for you to read for convenience:
+
+IPython has a set of predefined ‘magic functions’ that you can call with a command line style syntax. There are two kinds of magics, line-oriented and cell-oriented. Line magics are prefixed with the % character and work much like OS command-line calls: they get as an argument the rest of the line, where arguments are passed without parentheses or quotes. Lines magics can return results and can be used in the right hand side of an assignment. Cell magics are prefixed with a double %%, and they are functions that get as an argument not only the rest of the line, but also the lines below it in a separate argument.
+%matplotlib inline sets the backend of matplotlib to the 'inline' backend:
+
+With this backend, the output of plotting commands is displayed inline within frontends like the Jupyter notebook, directly below the code cell that produced it. The resulting plots will then also be stored in the notebook document.
+When using the 'inline' backend, your matplotlib graphs will be included in your notebook, next to the code. It may be worth also reading How to make IPython notebook matplotlib plot inline for reference on how to use it in your code.
+
+If you want interactivity as well, you can use the nbagg backend with %matplotlib notebook (in IPython 3.x), as described here.
+
+
+Provided you are running IPython, the %matplotlib inline will make your plot outputs appear and be stored within the notebook.
+
+According to documentation
+
+To set this up, before any plotting or import of matplotlib is performed you must execute the %matplotlib magic command. This performs the necessary behind-the-scenes setup for IPython to work correctly hand in hand with matplotlib; it does not, however, actually execute any Python import commands, that is, no names are added to the namespace.
+
+A particularly interesting backend, provided by IPython, is the  inline backend. This is available only for the Jupyter Notebook and the Jupyter QtConsole. It can be invoked as follows:
+
+%matplotlib inline
+With this backend, the output of plotting commands is displayed inline within frontends like the Jupyter notebook, directly below the code cell that produced it. The resulting plots will then also be stored in the notebook document.
+
+
+------------------
+
+
+
+7.
+knowing the shape of data
+
+
+train = pd.read_csv("/data/Housing/train.csv")
+test = pd.read_csv("/data/Housing/test.csv")
+
+
+
+train.shape[0]
+train.shape[1]
+
+--
+shape[0] give rows 
+and shape[1] give cols
+
+print ('The train data has {0} rows and {1} columns'.format(train.shape[0],train.shape[1]))
+print ('----------------------------')
+print ('The test data has {0} rows and {1} columns'.format(test.shape[0],test.shape[1]))
+
+
+--------------------
+
+8.
+
+for knowing info
+
+
+we can use 
+
+train.info()
+
+-------------------
+
+9. 
+checking missing data
+
+train.columns[train.isnull().any()]
+
+
+train.isnull().any()
+
+
+
+--------------------
+
+
+10. 
+
+converting Series to DATAframe
+
+earlier it was used to_frame() function but it does not work
+
+miss1 = pd.DataFrame(miss)
+
+
+
+
+
+

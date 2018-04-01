@@ -1,0 +1,7 @@
+#maximum standard deviation 
+#maximum sd will be when max variance is there.
+#max variance will be when half of data is minimum i.e 0 and half of it is maximum
+#so max variance is equal to   ((max_num _ min_num ) power 2)  / 4
+
+
+#https://stats.stackexchange.com/questions/50538/reference-for-textvarx-le-b-a2-4

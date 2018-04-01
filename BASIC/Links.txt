@@ -1,1 +1,12 @@
 https://www.mathsisfun.com/data/index.html
+
+
+
+http://www.statisticshowto.com/binomial-distribution-formula/
+
+
+
+
+old kaggle competition codes
+
+http://www.chioka.in/kaggle-competition-solutions/
