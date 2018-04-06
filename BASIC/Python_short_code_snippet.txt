@@ -191,6 +191,18 @@ miss1 = pd.DataFrame(miss)
 
 
 
+----------------------------------
+
+
+When inplace=True is passed, the data is renamed in place (it returns nothing)
+When inplace=False is passed (this is the default value, so isn't necessary), performs the operation and returns a copy of the object
+
+
+--------------------------------
+
+
+
+
 
 
 

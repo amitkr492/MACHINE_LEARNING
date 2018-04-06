@@ -5,3 +5,30 @@
 
 
 #https://stats.stackexchange.com/questions/50538/reference-for-textvarx-le-b-a2-4
+
+
+
+---------------------------------------------
+
+Skewness is a measure of symmetry, or more precisely, the lack of symmetry. 
+A distribution, or data set, is symmetric if it looks the same to the left and right of the center point.
+Kurtosis is a measure of whether the data are heavy-tailed or light-tailed relative to a normal distribution.
+
+
+
+
+-----------------------------------------------
+
+One hot encoding is a process by which categorical variables are converted into a form that could be provided to ML algorithms to do a better job in prediction
+
+
+
+-----------------------------------------------
+
+
+A standard normal deviate (or standard normal variable) is a normally distributed random variable with expected value 0 and variance 1.[1] A fuller term is standard normal random variable. Where collections of such random variables are used, there is often an associated (possibly unstated) assumption that members of such collections are statistically independent.
+
+A standard normal variate is a normal variate with mean µ=0 and standard deviation s =1 with a probability density function is. Standard of Value. Standard Residual. Standard Operating Procedure.
+
+-------------------------
+
